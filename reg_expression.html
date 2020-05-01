@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: rgb(37, 11, 39);
+        }
+           input
+           {
+               background: transparent;
+               border: none;
+               border-bottom: 3px solid  rgb(161, 7, 115);
+           }
+           div
+           {
+             /* border: 1px solid rgb(8, 2, 0); */
+             /* margin-left: 40%; 
+             margin-top: 40%; */
+             padding: 20px;
+             margin: auto;
+             margin-top: 20%;
+             /* background-color:darkorange; */
+             height: 80px;
+             width: 180px;
+           }
+           button
+           {
+               border: 3px solid whitesmoke;
+               background-color: rgb(2, 5, 200);
+               border-radius: 10px;
+               margin-top: 5%;
+               margin-left: 25%;
+           }
+    </style>
+</head>
+<body>
+    <script>
+        function valid()
+        {
+            var username=document.getElementById("name").value;
+            var regx=/prabhatm580/;
+            if(regx.test(username))
+            {
+                alert("Matched");
+            }
+            else
+            {
+                alert("Wrong Entry")
+            }
+        }
+    </script>
+    <div>
+        <input id="name" type="email" placeholder="Enter Your E-Mail">
+        <br>
+        <br>
+        <input id="name" type="password" placeholder="Enter Your Password">
+        <br>
+        <br>
+        <button onclick="valid()">Submit</button>
+    </div>
+</body>
+</html>
